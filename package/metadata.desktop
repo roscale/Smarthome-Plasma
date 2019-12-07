@@ -4,7 +4,6 @@ Name=Smarthome
 Comment=Smart device orchestrator
 Type=Service
 
-X-KDE-Library=plasma_applet_tutorial
 X-KDE-ParentApp=
 X-KDE-PluginInfo-Author=Rosca Alex-Manuel
 X-KDE-PluginInfo-Email=roscaalex19@gmail.com

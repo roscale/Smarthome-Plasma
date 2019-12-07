@@ -5,15 +5,11 @@ import org.kde.private.smarthome 1.0
 
 Item {
     id: main
-//    PlasmaCore.IconItem {
-//
-//                    // source - the icon to be displayed
-//            source: "face-smile"
-//
-//                    // height & width set to equal the size of the parent item (the empty "Item" above)
-//    		width: parent.width
-//            height: parent.width
-//    }
+    PlasmaCore.IconItem {
+            source: "images/lightbulb_off.png"
+    		width: parent.width
+            height: parent.width
+    }
 
     Plasmoid.compactRepresentation: CompactRepresentation {}
     Plasmoid.fullRepresentation: FullRepresentation {}
@@ -26,8 +22,7 @@ Item {
         console.log("Turned " + state);
     }
 
-    Bar {
-        id: bar
-        onBazChanged: console.log("BAR: " + bar.baz)
+    Networking {
+        id: networking
     }
 } // end Item

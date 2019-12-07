@@ -10,9 +10,8 @@ include(KDECompilerSettings)
 
 # Locate plasma_install_package macro.
 find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Quick)
+find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Concurrent)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Plasma)
 add_subdirectory(plugin)
 
-# Add installatation target ("make install").
-install(PROGRAMS Smarthome DESTINATION "/usr/bin")
-plasma_install_package(smarthome org.kde.smarthome)
+plasma_install_package(package org.kde.smarthome)
